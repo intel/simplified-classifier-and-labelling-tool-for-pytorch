@@ -1,0 +1,52 @@
+{
+    # Labelling tool parameters
+    unlabelled_folder:"data/unlabelled_data"
+    labelled_folder:"data/labelled_data"
+    default_label:"cat",
+    label_image_width: 600,
+    label_image_height: 600,
+    keypress: {"c":"cat", "d":"dog"}
+
+    # Network parameters
+    network: resnet50
+    model_path: models/resnet50
+    data_folder: data/labelled_data
+    file_ending: "jpg",
+    # These are the classes which it will train on. The folder names in the training
+    # dataset must match the names below
+    classes: [
+        "cat",
+        "dog",
+    ],
+
+    # run on either the cpu or gpu
+    gpu: false
+    #If being used on a server with multiple GPUs, use string below to specify which one
+    #cuda_visible_devices: "0"
+    #If running on cpu please specify the cores
+    cpu_cores: 4
+
+    # Training parameters
+    batch_size: 32
+    l_rate: 1e-5
+    epochs: 5
+    save_classes: false
+
+    # augmentation parameters:
+    image_width: 300
+    image_height: 300
+    image_count: 1
+
+    #  there are two splits, a train/test split which creates a dataset for the training
+    # process and a test dataset which is used AFTER the training is complete
+    # then there is a train/val split which is used DURING training to measure the progress
+    # of the run
+    train_test_split : 0.25 #25% used for testing
+    train_val_split : 0.2 #20% used for validation
+
+    # These folders are for using the trained model to automatically label data
+    unclassed_data_folder: data/unclassified
+    classed_data_folder: data/classified
+
+
+}

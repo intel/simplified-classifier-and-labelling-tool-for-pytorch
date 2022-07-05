@@ -1,0 +1,14 @@
+imutils
+matplotlib
+numpy
+hjson
+opencv_python
+Pillow
+scikit_learn
+tensorboard
+torch_tb_profiler
+torch
+torchvision
+tqdm
+efficientnet_pytorch
+seaborn

@@ -4,7 +4,7 @@ The aim of this project is to be a one stop shop for labelling, cleaning and aug
 
 Everything you need is easily configured in the config file. No need for any code changes!
 
-## Setup
+# Setup
 1. This project requires python 3.6 or greater. It is recommended that you use [virtualenv](https://thepythonguru.com/python-virtualenv-guide/) to set up an environment specifically for this project, although this is not required. Create a python3.6 virtual environment with the following command:
 ```
 virtualenv ~/virtualenvs/fivestar -p python3.6
@@ -18,10 +18,10 @@ pip install -r requirements.txt
 
 4. Set up your config.hjson file to point to your dataset and make sure the classes are set. You can also choose whether it should run on the CPU or GPU and which deep learning model it should use. There is an exampleconfig.hjson with default values for all the settings.
 
-## Supported Networks
+# Supported Networks
 A list of supported networks can be found [here](networks.md)
 
-## The labelling tool
+# The labelling tool
 This is a very simple tool written in Tkinter for quickly labelling images
 for classification. Run it on a folder of images and it will move them to
 a class folder in the labelled_images folder. It keeps track of which image

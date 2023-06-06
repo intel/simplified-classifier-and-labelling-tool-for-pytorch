@@ -33,10 +33,10 @@ If you want to classify a folder of images download a trained model [here](https
 
 There are also some helper classes for labelling and tidying the data
 
-## Dataset preparation
+# Dataset preparation
 This holds the files required to prepare a dataset. Visit this folder if looking to build the dataset before training. It includes files for: image labelling, text removal, data augmentation and duplicate removal.
 
-## labelling tool
+# labelling tool
 this is a simple tkinter gui that can be used for labelling data.
 
 for more information on the code please read the [training guide](training.md)
